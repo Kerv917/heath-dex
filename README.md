@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pokedex challenge
 
-## Available Scripts
+Hi there!, the following is an explanation of the Pokedex created by myself, using a Pokemon API which shows the stats of every Pokemon. I will tackle the related topics in the following order: 
 
-In the project directory, you can run:
+Demo: https://heath-dex.herokuapp.com/#/
+Installation/Running the App
+Design Decisions
+Main Components
+Future Improvements
+Conclusion
 
-### `npm start`
+Installation/Running the App
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It required me to install Nodejs, which I already had, it was necessary to install this dependencys before the application can be launched. Afterward I had to install Create-React-App, this is a supported way to create single-page React applications. Create-React-App offers a modern build setup with no configuration whatsoever. Setting up was very simple:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+I first tested if npm was installed, then "npm -g install create-react-app" on my terminal. After succesfully installing create-reat-app, I installed "npm install reat-app heathdex", this also created my directory.
 
-### `npm test`
+Folders included on react: node_modules (which has all the modules that i'll be using), public folder along with index,html, src folder which include the app.js. Most importantly; package.json. on the Package.json file, it included scripts, dependencies, name of the app, version and many more. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before I started to add contents, I installed bootstrap for styling. npm install bootstrap, which installs the latest package. 
+My reason for using bootstrap was because this is a simple single page-app. Boostrap has really great components, such as cards for the pokemons. 
 
-### `npm run build`
+Also installed Styled-components "npm install styled-components" on terminal. It allowed me to write the styling of my components in the  Javascript file, using JSX (syntax extension to JavaScript).
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Design Decisions 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Having created my first major react project through this challenge. The app is fairly straightforward in terms of implementaion. React follows a component based philsophy, so the HealthDex is similarly split into various different components, each responsible for it's own logic and rendering. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The main components: 
 
-### `npm run eject`
+Pokemon - wrapper component for the entire app.
+PokemonCard - cards for each Pokemon
+PokemonList - A list containing a bulk of the app's info and processing
+PokemonNavBar - the navigation bar at the top of the app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+A basic view of all 964 Pokemon is generated when the application is launched, and rendering using a simple pokemonUrl request to the PokeAPI. This contained the name of the Pokemon, their ID and image. I also had to fetch the Pokemon info such as types, height, weight special attacks/defense. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Conclusion 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This challenge was extremly fun and a fulfilling experience. I've recieved great exposure to React, and can now confidently develop future applications using Reatc. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
