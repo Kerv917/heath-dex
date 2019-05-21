@@ -3,10 +3,13 @@ Pokedex challenge
 Hi there!, the following is an explanation of the Pokedex created by myself, using a Pokemon API which shows the stats of every Pokemon. I will tackle the related topics in the following order: 
 
 Demo: https://heath-dex.herokuapp.com/#/
+
 Installation/Running the App
+
 Design Decisions
+
 Main Components
-Future Improvements
+
 Conclusion
 
 Installation/Running the App
